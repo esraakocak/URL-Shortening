@@ -5,14 +5,14 @@ import java.time.LocalDateTime;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.google.common.hash.Hashing;
 import com.project.urlShortening.dto.UrlDto;
 import com.project.urlShortening.model.Url;
 import com.project.urlShortening.repository.UrlRepository;
 
-@Component
+@Service
 public class UrlServiceImpl implements UrlService {
   
 	@Autowired
