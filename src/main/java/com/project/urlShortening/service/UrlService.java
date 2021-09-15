@@ -2,8 +2,8 @@ package com.project.urlShortening.service;
 
 import org.springframework.stereotype.Service;
 
+import com.project.urlShortening.dto.UrlDto;
 import com.project.urlShortening.model.Url;
-import com.project.urlShortening.model.UrlDto;
 
 @Service
 public interface UrlService {

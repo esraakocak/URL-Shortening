@@ -9,10 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.project.urlShortening.dto.UrlDto;
+import com.project.urlShortening.dto.UrlErrorResponseDto;
+import com.project.urlShortening.dto.UrlResponseDto;
 import com.project.urlShortening.model.Url;
-import com.project.urlShortening.model.UrlDto;
-import com.project.urlShortening.model.UrlErrorResponseDto;
-import com.project.urlShortening.model.UrlResponseDto;
 import com.project.urlShortening.service.UrlService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 @RestController

@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.google.common.hash.Hashing;
+import com.project.urlShortening.dto.UrlDto;
 import com.project.urlShortening.model.Url;
-import com.project.urlShortening.model.UrlDto;
 import com.project.urlShortening.repository.UrlRepository;
 
 @Component
@@ -41,7 +41,7 @@ public class UrlServiceImpl implements UrlService {
 
 	private LocalDateTime getExpirationDate(String expirationDate, LocalDateTime creationDate) {
 		if (StringUtils.isBlank(expirationDate)) {
-			return creationDate.plusSeconds(60);
+			return creationDate;
 		}
 		LocalDateTime expirationDateToRet = LocalDateTime.parse(expirationDate);
 		return expirationDateToRet;
